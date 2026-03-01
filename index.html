@@ -4,21 +4,49 @@
     <title>*** NOOB GUIDE ***</title>
     <style>
         body {
-            background-color: #000080; /* Classic Navy */
-            background-image: url('https://www.transparenttextures.com/patterns/carbon-fibre.png'); 
-            color: #00FF00; /* Matrix Green */
+            /* Tiling the background image */
+            background-image: url('Bg.png');
+            background-repeat: repeat;
+            color: #00FF00; 
             font-family: "Courier New", Courier, monospace;
-            cursor: url('https://cur.cursors-4u.net/ani/ani-1/ani1.ani'), auto;
-            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* The Retro Top Bar */
+        #top-bar {
+            background-color: #c0c0c0;
+            border-bottom: 3px outset #fff;
+            padding: 5px 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            gap: 10px;
+        }
+
+        .nav-button {
+            background-color: #c0c0c0;
+            border: 2px outset #fff;
+            color: #000;
+            padding: 2px 15px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .nav-button:active {
+            border: 2px inset #fff;
         }
 
         #container {
-            width: 80%;
-            margin: auto;
+            width: 85%;
+            margin: 30px auto;
             border: 5px ridge #808080;
-            background-color: #c0c0c0; /* Windows 95 Gray */
+            background-color: rgba(192, 192, 192, 0.9); /* Slight transparency to see the Bg.png */
             color: #000;
             padding: 20px;
+            box-shadow: 10px 10px 0px rgba(0,0,0,0.5);
         }
 
         h1 {
@@ -26,7 +54,6 @@
             color: white;
             padding: 10px;
             text-shadow: 2px 2px #000;
-            font-size: 3em;
             border: 3px inset #fff;
         }
 
@@ -43,66 +70,49 @@
         marquee {
             background-color: #000;
             color: yellow;
-            font-weight: bold;
             padding: 5px;
             border: 2px solid red;
-        }
-
-        .guestbook-btn {
-            background-color: #c0c0c0;
-            border: 3px outset #fff;
-            padding: 10px;
-            cursor: pointer;
-            font-weight: bold;
-            text-decoration: none;
-            color: black;
-        }
-
-        .guestbook-btn:active {
-            border: 3px inset #fff;
+            margin-bottom: 10px;
         }
 
         footer {
             margin-top: 20px;
             font-size: 0.8em;
+            border-top: 2px groove #fff;
+            padding-top: 10px;
         }
     </style>
 </head>
 <body>
 
+    <div id="top-bar">
+        <a href="index.html" class="nav-button">INDEX</a>
+        <span style="color: #808080; padding-left: 10px;">File | Edit | View | Help</span>
+    </div>
+
     <div id="container">
-        <marquee>+++ WELCOME TO THE NOOB GUIDE +++ LEARN THE INTERNETS +++ NO HACKERS ALLOWED +++</marquee>
+        <marquee scrollamount="10">>>> WELCOME TO THE NOOB GUIDE <<< YOU ARE VISITOR #000420 >>></marquee>
         
         <h1>NOOB GUIDE</h1>
         
-        <img src="https://web.archive.org/web/20090829141744im_/http://geocities.com/TimesSquare/Alley/5830/construction.gif" alt="Under Construction">
+        <center>
+            <img src="https://web.archive.org/web/20090829141744im_/http://geocities.com/TimesSquare/Alley/5830/construction.gif">
+        </center>
         
-        <p class="blink">WARNING: STICKY CONTENT AHEAD!</p>
+        <p class="blink">!!! ALERT: TOTAL NOOB ZONE !!!</p>
 
         <hr>
 
-        <h3>Step 1: Don't Click The Shiny Buttons</h3>
-        <p>If it says "You are the 1,000,000th visitor," it is a lie. Do not click it or your computer will explode (maybe).</p>
-
-        <h3>Step 2: Use Netscape</h3>
-        <p>This site looks best in 800x600 resolution. If you are using a modern browser, you are doing it wrong.</p>
-
-        <hr>
-
-        <p>
-            <a href="#" class="guestbook-btn">SIGN MY GUESTBOOK</a>
-        </p>
-
-        <div style="margin-top:20px;">
-            <img src="https://web.archive.org/web/20091023120150im_/http://geocities.com/Athens/Acropolis/2946/counter.gif" alt="Hit Counter">
-            <p>Hits since 1998</p>
+        <div style="text-align: left; padding: 10px;">
+            <h3>Lesson 01: The Mouse</h3>
+            <p>The "mouse" is the plastic thing on your desk. Move it to move the arrow. Do not pick it up and talk into it like a radio.</p>
         </div>
 
+        <hr>
+
         <footer>
-            <p>&copy; 1999 NOOB_MASTER_69. Built with Notepad. <br>
-            <img src="https://web.archive.org/web/20090830035547im_/http://geocities.com/SiliconValley/Pines/5412/ie_logo.gif" width="40">
-            <img src="https://web.archive.org/web/20091027003254im_/http://geocities.com/TheTropics/Island/5153/netscape.gif" width="40">
-            </p>
+            <p>Best viewed in <b>Netscape Navigator 4.0</b></p>
+            <img src="https://web.archive.org/web/20090830050244im_/http://geocities.com/SiliconValley/Heights/7087/geocities.gif">
         </footer>
     </div>
 
